@@ -207,7 +207,8 @@ nav ul.links > li a:hover {
 
 @media (max-width: 450px) {
   .projects .card .txt {
-    line-height: 0.92;
+    line-height: 0.9;
+    font-size: 10px;
   }
 }
 
