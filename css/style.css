@@ -1,0 +1,243 @@
+:root {
+  --main-color: #ffbd39;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  scroll-behavior: initial;
+}
+/* Navbar */
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+}
+nav h1 {
+  font-weight: bold;
+  font-size: 30px !important;
+}
+nav ul.links > li {
+  position: relative;
+}
+nav ul.links > li a.active::after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+nav ul.links > li a.active {
+  color: var(--main-color) !important;
+  font-weight: bold;
+}
+nav ul.links > li a:hover {
+  color: var(--main-color);
+}
+
+/* Home */
+
+.home .text {
+  margin-top: 15%;
+  font-size: 30px;
+}
+
+.home .text .hello {
+  color: var(--main-color);
+}
+.home .text .title {
+  line-height: 2;
+}
+
+.home .text .title span {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+/* About */
+
+.about .text {
+  margin-top: 10%;
+  font-size: 20px;
+  text-align: left;
+}
+
+.about .text .projects span.number {
+  color: var(--main-color);
+}
+
+.button {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* Skills */
+
+.skills .technical {
+  position: relative;
+}
+.skills .technical:after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  background-color: var(--main-color);
+}
+.skills .technical .card {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid white;
+  height: 50px;
+  padding-top: 9px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.skills .technical .card:hover {
+  background-color: var(--main-color);
+  color: white;
+  border-color: var(--main-color);
+}
+
+@media (min-width: 991px) {
+  .skills .technical .card {
+    width: calc(90% / 4);
+  }
+}
+@media (max-width: 991px) {
+  .skills .technical .card {
+    width: calc(90% / 2);
+  }
+}
+
+.skills .soft .card {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid white;
+  padding-top: 9px;
+  font-size: 20px;
+  transition: 0.3s;
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.skills .soft .card p {
+  position: absolute;
+  top: 100%;
+  text-align: left;
+  font-size: 18px;
+  background-color: var(--main-color);
+  color: white;
+  height: 100%;
+  z-index: 10;
+  transition: 0.3s;
+}
+.skills .soft .card:hover p {
+  top: 0;
+}
+
+@media (min-width: 991px) {
+  .skills .soft .card {
+    width: calc(90% / 3);
+  }
+}
+@media (max-width: 991px) {
+  .skills .soft .card {
+    width: 100%;
+  }
+}
+/* projects */
+
+.projects .card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--main-color);
+}
+.projects .card .txt {
+  position: absolute;
+  right: 100%;
+  top: 100%;
+  background-color: rgba(140, 94, 1, 0.7);
+  transition: 0.5s;
+}
+.projects .card .txt a {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+.projects .card .txt p {
+  font-size: 18px;
+}
+.projects .card:hover .txt {
+  right: 0;
+  top: 0;
+}
+
+@media (min-width: 991px) {
+  .projects .card {
+    width: calc(90% / 2);
+  }
+}
+@media (max-width: 991px) {
+  .projects .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .projects .card .txt {
+    line-height: 0.92;
+  }
+}
+
+/* contact */
+
+.contact > p {
+  font-size: 20px;
+}
+.contact .links > a {
+  color: white;
+}
+.contact .links > a:hover {
+  color: var(--main-color);
+}
+
+.contact .links i {
+  font-size: 30px;
+  background-color: rgba(91, 91, 91, 0.3);
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 991px) {
+  .contact .links > a {
+    width: calc(90% / 4);
+  }
+}
+@media (max-width: 991px) {
+  .contact .links > a {
+    width: calc(90% / 2);
+  }
+}

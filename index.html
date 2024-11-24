@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="container m-auto navbar navbar-expand-lg navbar-dark">
+      <h1 class="navbar-brand">AHMED</h1>
+      <button
+        class="navbar-toggler p-1"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="links navbar-nav ms-auto">
+          <li class="nav-item me-5">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <div class="home container m-auto row justify-content-between" id="home">
+      <div class="text col-lg-6 col-sm-12 pt-auto px-0">
+        <p class="hello">Hello</p>
+        <p class="title text-light">
+          I'm <span>Ahmed Mohamed Labib</span> Frontend Developer
+        </p>
+      </div>
+      <div class="img col-lg-6 col-sm-12">
+        <img class="w-100" src="images/img.png" alt="" />
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="about text-light text-center" id="about">
+      <h1 class="my-5">About Me</h1>
+      <div class="container m-auto row justify-content-between">
+        <div class="img col-lg-4 col-sm-12">
+          <img class="w-100" src="images/about.png" alt="" />
+        </div>
+        <div class="text col-lg-8 col-sm-12">
+          <p>
+            Hi, I' m Ahmed, a front-end developer focused on building
+            responsive, user-friendly web interfaces. Skilled in HTML, CSS,
+            JavaScript, Angular, and Bootstrap, I bring designs to life with
+            clean, performance-focused code. Let’s connect to create seamless,
+            accessible digital experiences!
+          </p>
+
+          <div class="mt-5">
+            <span class="projects mt-3 me-5"
+              ><span class="number">15</span> Project Complete</span
+            >
+            <a
+              class="button btn"
+              href="document/CV Ahmed Mohamed Labib.pdf"
+              download="CV"
+              >download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills text-light text-center" id="skills">
+      <h1 class="my-5">My Skills</h1>
+      <div
+        class="technical container d-flex justify-content-between flex-wrap mb-5"
+      >
+        <div class="card mb-4">HTML5</div>
+        <div class="card mb-4">CSS</div>
+        <div class="card mb-4">Javascript</div>
+        <div class="card mb-4">Bootstrap</div>
+        <div class="card mb-4">Angular</div>
+        <div class="card mb-4">Python</div>
+        <div class="card mb-4">Microsoft Word</div>
+        <div class="card mb-4">Microsoft Powerpoint</div>
+        <div class="card mb-4">Micrsoft EXcel</div>
+        <div class="card mb-4">Microsoft Power BI</div>
+        <div class="card mb-4">My SQL</div>
+        <div class="card mb-4">JSON</div>
+      </div>
+      <div class="soft container d-flex justify-content-between flex-wrap">
+        <div class="card mb-5">
+          <h3>Team Work</h3>
+          <p class="p-2">
+            Worked closely with teammates and supported them during critical
+            phases of development promoting a positive working environment.
+          </p>
+        </div>
+        <div class="card mb-5">
+          <h3>Communication</h3>
+          <p class="p-2">
+            Paid attention to team members' input and client feedback, fostering
+            a collaborative environment.
+          </p>
+        </div>
+        <div class="card mb-5">
+          <h3>Leadership</h3>
+          <p class="p-2">
+            Assigned tasks based on members' strengths and monitored progress to
+            ensure deadlines were met.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+
+    <div class="projects container text-center" id="projects">
+      <h1 class="my-5 text-light">My Projects</h1>
+
+      <div class="d-flex justify-content-between flex-wrap gap-3">
+        <div class="card p-0">
+          <div class="img">
+            <img class="w-100" src="images/ACADEMIA.png" alt="" />
+          </div>
+          <div class="txt p-3 text-light w-100 h-100">
+            <a target="_blank" href="https://ahmedmlabib.github.io/ACADEMIA/"
+              >ACADEMIA</a
+            >
+            <p>
+              An online learning platform featuring Course Listings, User
+              Dashboard, and Certificate Management. Built with Angular and
+              TypeScript, it offers course tracking, automated certificate
+              generation, and responsive design for seamless navigation on any
+              device
+            </p>
+          </div>
+        </div>
+        <div class="card p-0">
+          <div class="img">
+            <img class="w-100" src="images/spicial-desgin.png" alt="" />
+          </div>
+          <div class="txt p-3 text-light w-100 h-100">
+            <a
+              target="_blank"
+              href="https://ahmedmlabib.github.io/HTML-CSS-JS-Template/"
+              >Special Design</a
+            >
+            <p>
+              A creative agency template featuring sections like About, Skills,
+              Gallery, Timeline, and Testimonials. It highlights services in web
+              development, marketing, hosting, and more, with a clean,
+              interactive design.
+            </p>
+          </div>
+        </div>
+        <div class="card p-0">
+          <div class="img">
+            <img class="w-100" src="images/tradix.png" alt="" />
+          </div>
+          <div class="txt p-3 text-light w-100 h-100">
+            <a
+              target="_blank"
+              href="https://ahmedmlabib.github.io/Tradix-Design-/"
+              >Tradix Design
+            </a>
+            <p>
+              A modern template for a financial trading company with sections
+              like Home, Services, Portfolio, and Contact. It highlights
+              expertise in investment management and financial consulting, with
+              a sleek, professional design and engaging visuals
+            </p>
+          </div>
+        </div>
+        <div class="card p-0">
+          <div class="img">
+            <img class="w-100" src="images/dashboard.png" alt="" />
+          </div>
+          <div class="txt p-3 text-light w-100 h-100">
+            <a
+              target="_blank"
+              href="https://ahmedmlabib.github.io/HTML-CSS-Template-Four/"
+              >Dashboard</a
+            >
+            <p>
+              A responsive and visually appealing website template created using
+              pure HTML and CSS. This project demonstrates clean code practices,
+              user-friendly design, and adaptability across different screen
+              sizes. The template is suitable for various applications,
+              emphasizing functionality and aesthetics.
+            </p>
+          </div>
+        </div>
+        <div class="card p-0">
+          <div class="img">
+            <img class="w-100" src="images/subscribe-form.png" alt="" />
+          </div>
+          <div class="txt p-3 text-light w-100 h-100">
+            <a
+              target="_blank"
+              href="https://ahmedmlabib.github.io/Subscribe-Form/"
+              >Subscribe Form</a
+            >
+            <p>
+              A responsive subscription form built using HTML, CSS and JS. This
+              project highlights clean code practices, user-friendly design, and
+              seamless adaptability across different screen sizes. The form is
+              ideal for integrating into websites to capture user email
+              subscriptions, combining functionality with modern aesthetics.
+            </p>
+          </div>
+        </div>
+        <div class="card p-0">
+          <div class="img">
+            <img class="w-100" src="images/calculator.png" alt="" />
+          </div>
+          <div class="txt p-3 text-light w-100 h-100">
+            <a target="_blank" href="https://ahmedmlabib.github.io/calculator/"
+              >Calculator</a
+            >
+            <p>
+              A simple and interactive calculator application built using HTML,
+              CSS, and JavaScript. This project showcases clean coding
+              practices, responsive design, and user-friendly functionality,
+              making it suitable for everyday calculations across various
+              devices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="contact container text-center text-light py-5" id="contact">
+      <h1 class="my-5">My Contact</h1>
+      <p class="mb-5">
+        Interested in collaborating or have a project in mind? I'd love to hear
+        from you!
+      </p>
+      <div class="links d-flex justify-content-between flex-wrap py-5">
+        <a href="tel:+201128628601" target="_blank" class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <p>+201128628601</p>
+        </a>
+        <a href="mailto:alabib55565@gmail.com" target="_blank" class="mail">
+          <i class="fa-solid fa-envelope"></i>
+          <p>alabib5565@gmail.com</p>
+        </a>
+        <a
+          href="https://github.com/AhmedMLabib"
+          target="_blank"
+          class="linkedin"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <p>Ahmed Mohamed Labib</p>
+        </a>
+        <a href="https://github.com/AhmedMLabib" target="_blank" class="git">
+          <i class="fa-brands fa-github"></i>
+          <p>AhmedMLabib</p>
+        </a>
+      </div>
+      <a
+        class="button btn my-5"
+        href="document/CV Ahmed Mohamed Labib.pdf"
+        download="CV"
+        >download CV</a
+      >
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
