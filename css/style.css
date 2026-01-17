@@ -241,3 +241,10 @@ nav ul.links > li a:hover {
     width: calc(90% / 2);
   }
 }
+
+.buy > a {
+  color: var(--main-color);
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+}
